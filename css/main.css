@@ -1,0 +1,52 @@
+body {
+	background-color: #ccc;
+}
+#jobs {
+	color: #454442;
+	vertical-align: top;
+	text-align: left;
+	font: normal .917em/1.636em Verdana,Arial,Geneva,san-serif;
+	padding: 4px;
+	background: #dedede;
+    margin:0 auto;
+    width:700px;	
+}
+
+#jobs h2 {
+	margin: 0 0 1em 0;
+	padding: 1em;
+	background-color:#006DA8;
+	color: #ffffff;
+}
+
+
+#job-bg {
+	background-color:#fff;
+}
+
+#job-bg input {
+	padding: 10px;
+	margin: 10px;
+	width:93%;
+	border: 2px solid #dedede;
+}
+
+#job-bg h3 a {
+	border: none;
+	color: #006da8;
+	text-decoration: none;
+	text-transform:capitalize;
+	font: bold 1.2em/1em Verdana,Arial,Geneva,san-serif;
+}
+
+#job-bg ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+#job-bg ul li {
+	margin: 0;
+	padding: 4px 16px 18px;
+	border-bottom: 1px solid #dedede;
+}

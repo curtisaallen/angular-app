@@ -1,0 +1,18 @@
+    <div ng-controller="JobController" ng-init="init()" id="job-bg">
+    	<h2>{{title}}</h2>
+    	<input type="text" ng-model="search" placeholder="Search Job">
+    	<ul>
+    		<li ng-repeat="job in jobs | filter:search |
+  orderBy: 'position_title'" class="animated fadeIn">
+                <h3> <a href="{{job.url}}">{{job.position_title  | lowercase}}</a> </h3>
+    			<b>Department:</b>
+    			{{job.organization_name}}<br/>
+                <b>Location:</b>
+                {{job.locations[0]}}
+    			<div ng-if="job.maximum">
+    			  <b>Salary:</b> {{job.minimum | currency}} - {{job.maximum | currency}}  <br>
+    			</div>
+    			<b>Open Period:</b>  {{job.start_date | date:"MM/dd/yyyy"}} - {{job.end_date | date:"MM/dd/yyyy"}} 
+    		</li>
+    	</ul>
+    </div>
